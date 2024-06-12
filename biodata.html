@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Biodata</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="submit_biodata.php" method="post">
+        <h2>Form Biodata</h2>
+        <label for="nama">Nama: harun</label>
+        <label for="alamat">Alamat: sidoarjo</label>
+        <label for="tgl_lahir">Tanggal Lahir: 16 februari 2004</label>
+        <label for="jk">Jenis Kelamin: Laki-laki</label>
+        <label for="jk_laki" style="display: inline;">Laki-laki</label>
+        <label for="jk_perempuan" style="display: inline;">Perempuan</label>
+        <label for="email">Email: maulanaharun@gmail.com</label>
+        <label for="telepon">Telepon: 0812345</label>
+    </form>
+</body>
+</html>
